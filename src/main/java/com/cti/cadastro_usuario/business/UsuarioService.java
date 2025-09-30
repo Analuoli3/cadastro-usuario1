@@ -28,8 +28,8 @@ public class UsuarioService {
         Usuario usuarioAtualizado = Usuario.builder()
                 .email(usuario.getEmail()!= null ?
                         usuario.getEmail() : usuarioEntity.getEmail())
-                .nome(usuario.getNome() != null ? usuario.getNome() :
-                        usuarioEntity.getNome())
+                .nome(usuario.getNome() != null ?
+                        usuario.getNome() : usuarioEntity.getNome())
                 .id(usuarioEntity.getId())
                 .build();
 
