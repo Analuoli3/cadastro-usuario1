@@ -15,6 +15,7 @@ public class UsuarioController {
 
     @PostMapping
     public ResponseEntity<Void> salvarUsuario(@RequestBody Usuario usuario){
+        usuarioService.salvarUsuario(usuario);
        return ResponseEntity.ok().build();
    }
 

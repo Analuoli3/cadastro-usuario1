@@ -2,15 +2,13 @@ package com.cti.cadastro_usuario.business;
 
 import com.cti.cadastro_usuario.infrastructure.entitys.Usuario;
 import com.cti.cadastro_usuario.infrastructure.repository.UsuarioRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+@RequiredArgsConstructor
 @Service
 public class UsuarioService {
     private final UsuarioRepository repository;
-
-    public UsuarioService(UsuarioRepository repository) {
-        this.repository = repository;
-    }
 
     public void salvarUsuario(Usuario usuario){
         repository.saveAndFlush(usuario);
