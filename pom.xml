@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cti</groupId>
-	<artifactId>cadastro-usuario</artifactId>
+	<artifactId>cadastro-pet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cadastro-usuario</name>
 	<description>Demo project for Spring Boot</description>
